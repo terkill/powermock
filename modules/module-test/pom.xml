@@ -17,7 +17,7 @@
     </description>
 
     <modules>
-        <module>easymock</module>
-        <module>mockito</module>
+        <!--<module>easymock</module>
+        <module>mockito</module>-->
     </modules>
 </project>

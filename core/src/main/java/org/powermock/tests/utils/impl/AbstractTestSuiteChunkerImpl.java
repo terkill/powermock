@@ -104,7 +104,8 @@ public abstract class AbstractTestSuiteChunkerImpl<T> implements TestSuiteChunke
                 defaultListenerSize = 0;
             }
 
-            registerProxyframework(classLoader);
+            //registerProxyframework(classLoader);
+            registerProxyframework(this.getClass().getClassLoader());
 
             final Class<?> powerMockTestListenerType = Class.forName(PowerMockTestListener.class.getName(), false, classLoader);
             Object testListeners = null;
